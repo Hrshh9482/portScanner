@@ -11,5 +11,9 @@ def scan_port(target_ip, port, timeout=1):
 if __name__ == "__main__":
     ip = socket.gethostbyname("google.com")
     print(f"Resolved IP: {ip}")
-    print(f"Port 80 open: {scan_port(ip, 80, timeout=2)}")
     print(f"Port 443 open: {scan_port(ip, 443, timeout=2)}")
+    '''for i in range(1,101):
+        print(f"Port {i} open: {scan_port(ip,i, timeout = 1)}")'''
+'''    print(f"Resolved IP: {ip}")
+    print(f"Port 80 open: {scan_port(ip, 80, timeout=2)}")
+    print(f"Port 443 open: {scan_port(ip, 443, timeout=2)}")'''
